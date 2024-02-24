@@ -10,8 +10,6 @@
     "preview": "vite preview",
     "prepare": "husky",
     "prettier": "prettier . --ext ts,tsx",
-    "prettier-write": "prettier --write .",
-    "prettier-check": "prettier --check .",
     "eslint-fix": "eslint --fix . --ext ts,tsx"
   },
   "dependencies": {
