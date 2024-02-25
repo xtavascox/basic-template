@@ -14,8 +14,12 @@
     "eslint:fix": "eslint --fix"
   },
   "dependencies": {
+    "@mantine/core": "^7.5.3",
+    "@mantine/dates": "^7.5.3",
     "@mantine/form": "^7.5.3",
     "@mantine/hooks": "^7.5.3",
+    "@mantine/modals": "^7.5.3",
+    "dayjs": "^1.11.10",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",
     "react": "^18.2.0",
