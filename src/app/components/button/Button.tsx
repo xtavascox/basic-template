@@ -4,14 +4,15 @@ import { FC, HTMLAttributes } from 'react'
 export const Button: FC<ButtonProps & HTMLAttributes<HTMLButtonElement>> = ({
     className,
     text = '',
-    variant = 'primary',
+    variant = 'default',
     onClick,
 }) => {
     return (
         <div>
             <button
                 className={`${variantStyle(variant)} ${className}`}
-                onClick={onClick}>
+                onClick={onClick}
+            >
                 <span> {text} </span>
             </button>
         </div>
@@ -20,10 +21,8 @@ export const Button: FC<ButtonProps & HTMLAttributes<HTMLButtonElement>> = ({
 
 const variantStyle = (type: VariantType) => {
     switch (type) {
-        case 'primary':
-            return 'btn btn-primary'
-        case 'secondary':
-            return 'btn btn-secondary'
+        case 'default':
+            return 'btn btn-default'
         case 'outline':
             return 'btn btn-outline'
         case 'link':
@@ -31,6 +30,6 @@ const variantStyle = (type: VariantType) => {
         case 'ghost':
             return 'btn btn-ghost'
         default:
-            return 'btn btn-primary'
+            return 'btn btn-default'
     }
 }

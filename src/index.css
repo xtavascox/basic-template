@@ -14,25 +14,28 @@
         @apply px-4 py-2.5 w-full rounded-xl font-semibold;
     }
 
-    .btn-primary {
+    .btn-default {
         @apply bg-coral-red-500 text-white;
     }
-    .btn-primary:hover {
+
+    .btn-default:hover {
         @apply bg-coral-red-600 bg-opacity-90;
     }
-    .btn-primary:active {
-        @apply bg-coral-red-700 bg-opacity-90 shadow-amber-300;
+
+    .btn-default:active {
+        @apply bg-coral-red-700 bg-opacity-90 ;
     }
 
     .btn-ghost {
-        @apply bg-transparent text-blue-500;
-    }
-    .btn-ghost:hover {
-        @apply bg-coral-red-400 text-white;
+        @apply bg-transparent text-coral-red-400;
     }
 
-    .btn-secondary {
-        @apply bg-gray-500 text-white;
+    .btn-ghost:hover {
+        @apply border-2 border-coral-red-400;
+    }
+
+    .btn-ghost:active {
+        @apply bg-coral-red-500 bg-opacity-10 ;
     }
 
     .btn-outline {
@@ -43,7 +46,19 @@
         @apply bg-silver-300 bg-opacity-20;
     }
 
-    .btn-ghost {
-        @apply bg-transparent text-gray-500;
+    .btn-outline:active {
+        @apply bg-silver-400 bg-opacity-45 ;
+    }
+
+    .btn-link {
+        @apply text-coral-red-500 underline underline-offset-2 p-0;
+    }
+
+    .btn-link:active {
+        @apply text-coral-red-700 underline underline-offset-2;
+    }
+
+    .menu-hidden{
+        @apply w-0 transition-transform  duration-300 ease-in-out;
     }
 }

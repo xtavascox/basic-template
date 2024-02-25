@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-const variantSchema = z.enum(['primary', 'secondary', 'outline', 'link', 'ghost'])
+const variantSchema = z.enum(['default', 'outline', 'link', 'ghost'])
 const ButtonSchema = z.object({
     text: z.string(),
     variant: variantSchema.optional(),
