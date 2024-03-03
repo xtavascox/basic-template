@@ -19,7 +19,6 @@ export const NavbarLayout = () => {
                         to={item.to}
                         label={<Text>{item.label}</Text>}
                         autoContrast
-                        // styles={{ root: { borderRadius: 5 } }}
                         onClick={() => setActive(index)}
                         active={active === index}
                         key={`item-navbar-${item.label}`}
